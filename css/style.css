@@ -1,659 +1,726 @@
-            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
-            * {
-                margin: 0;
-                padding: 0;
-                outline: 0;
-                box-sizing: border-box;
-            }
-            
-            #container {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            body {
-                font-family: 'Poppins', sans-serif;
-            }
-            
-            .no-decoration {
-                text-decoration: none;
-            }
-            /* header */
-            
-            .flex-1 {
-                flex: 1;
-                padding: 20px 350px;
-            }
-            
-            .logo {
-                padding-left: 50px;
-                float: left;
-                width: 12rem;
-                position: relative;
-                top: 10px;
-            }
-            
-            .topnav {
-                padding: 20px 30px;
-                float: right;
-                overflow: hidden;
-            }
-            
-            .topnav a {
-                display: inline-block;
-                color: #111A47;
-                text-align: center;
-                padding: 6px 8px;
-                text-decoration: none;
-                font-size: 17px;
-            }
-            
-            .topnav a:hover {
-                color: #6D6D6D;
-            }
-            
-            .topnav .icon {
-                display: none;
-            }
-            
-            .botao-nav {
-                padding: 12px 30px;
-                border: none;
-                border-radius: 8px;
-                font-size: 16px;
-                font-weight: bold;
-                background: linear-gradient(118.1deg, #E4C332 -2.02%, #f8f400 129.72%);
-                cursor: pointer;
-                transition: all 0.5s;
-                position: relative;
-                overflow: hidden;
-            }
-            
-            .botao-nav:hover:before {
-                transform: translate(-25%, -25%) rotate(-180deg);
-            }
-            
-            .botao-nav:hover {
-                background: linear-gradient(118.1deg, #f8f400 -2.02%, #E4C332 129.72%);
-            }
-            /* Primeira Div */
-            
-            .flex-2 {
-                padding: 100px 400px;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr;
-                flex: 2;
-                align-items: center;
-                text-align: center;
-            }
-            
-            .item1-content1 {
-                grid-area: 1/1;
-                padding-right: 40px;
-            }
-            
-            .item2-content1 {
-                grid-area: 1/2;
-            }
-            
-            .imagem1 {
-                width: 55vh;
-            }
-            
-            h1 {
-                font-size: 48px;
-                background: rgb(9, 9, 121);
-                background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                text-align: left;
-                line-height: 4rem;
-            }
-            
-            .p1 {
-                font-size: 18px;
-                color: black;
-                text-align: left;
-                font-weight: 400;
-                padding-top: 10px;
-            }
-            
-            .saiba-mais {
-                padding-top: 20px;
-                text-decoration: none;
-                float: left;
-                font-weight: 700;
-                background: rgb(9, 9, 121);
-                background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            
-            .saiba-mais:hover {
-                background: rgb(9, 9, 121);
-                background: linear-gradient(239deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            /* Segunda Div */
-            
-            #servicos {
-                padding: 140px 400px;
-                background-color: white;
-            }
-            
-            .item2-content2 {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                font-size: 38px;
-                transition: 0.5s;
-            }
-            
-            .item2-content2 i {
-                color: rgb(9, 9, 121, 1);
-            }
-            
-            h2 {
-                padding: 40px;
-                grid-area: 1/1;
-                font-size: 46px;
-                white-space: nowrap;
-                text-align: center;
-                background: rgb(9, 9, 121);
-                background: linear-gradient(239deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                position: relative;
-            }
-            
-            .comunicacao {
-                background-color: white;
-                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
-                padding: 60px 30px;
-                width: 20rem;
-                height: 18rem;
-                margin-top: 80px;
-                border-radius: 5%;
-                cursor: pointer;
-            }
-            
-            .comunicacao p {
-                font-size: 18px;
-                margin-top: 20px;
-                font-weight: bold;
-                color: rgb(9, 9, 121, 1);
-            }
-            
-            .comunicacao span {
-                font-size: 16px;
-                transition: 0.3s;
-                opacity: 0;
-            }
-            
-            .comunicacao:hover {
-                background: rgba(9, 9, 121, 0.8);
-                background: linear-gradient(239deg, rgba(9, 9, 121, 0.8) 0%, rgba(0, 194, 255, 0.8) 100%);
-                color: white;
-            }
-            
-            .comunicacao:hover p {
-                color: white;
-                transition: 0.3s;
-            }
-            
-            .comunicacao:hover i {
-                color: white;
-                transition: 0.3s;
-            }
-            
-            .comunicacao:hover span {
-                opacity: 1;
-                transition: 0.3s;
-            }
-            
-            .mkt-digital {
-                background-color: white;
-                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
-                padding: 60px 0px 30px 0px;
-                width: 20rem;
-                height: 18rem;
-                margin-top: 80px;
-                border-radius: 5%;
-                cursor: pointer;
-            }
-            
-            .mkt-digital p {
-                font-size: 18px;
-                margin-top: 20px;
-                font-weight: bold;
-                color: rgb(9, 9, 121, 1);
-            }
-            
-            .mkt-digital span {
-                font-size: 16px;
-                transition: 0.3s;
-                opacity: 0;
-            }
-            
-            .mkt-digital:hover {
-                background: rgba(9, 9, 121, 0.8);
-                background: linear-gradient(239deg, rgba(9, 9, 121, 0.8) 0%, rgba(0, 194, 255, 0.8) 100%);
-                color: white;
-            }
-            
-            .mkt-digital:hover p {
-                color: white;
-                transition: 0.3s;
-            }
-            
-            .mkt-digital:hover i {
-                color: white;
-                transition: 0.3s;
-            }
-            
-            .mkt-digital:hover span {
-                opacity: 1;
-                transition: 0.3s;
-            }
-            
-            .web {
-                background-color: white;
-                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
-                padding: 60px 30px;
-                width: 20rem;
-                height: 18rem;
-                margin-top: 80px;
-                border-radius: 5%;
-                cursor: pointer;
-            }
-            
-            .web p {
-                font-size: 18px;
-                margin-top: 20px;
-                font-weight: bold;
-                color: rgb(9, 9, 121, 1);
-            }
-            
-            .web span {
-                font-size: 16px;
-                transition: 0.3s;
-                opacity: 0;
-            }
-            
-            .web:hover {
-                background: rgba(9, 9, 121, 0.8);
-                background: linear-gradient(239deg, rgba(9, 9, 121, 0.8) 0%, rgba(0, 194, 255, 0.8) 100%);
-                color: white;
-            }
-            
-            .web:hover p {
-                color: white;
-                transition: 0.3s;
-            }
-            
-            .web:hover i {
-                color: white;
-                transition: 0.3s;
-            }
-            
-            .web:hover span {
-                opacity: 1;
-                transition: 0.3s;
-            }
-            
-            .e-commerce {
-                background-color: white;
-                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
-                padding: 60px 30px;
-                width: 20rem;
-                height: 18rem;
-                margin-top: 80px;
-                border-radius: 5%;
-                cursor: pointer;
-            }
-            
-            .e-commerce p {
-                font-size: 18px;
-                margin-top: 20px;
-                font-weight: bold;
-                color: rgb(9, 9, 121, 1);
-            }
-            
-            .e-commerce span {
-                font-size: 16px;
-                transition: 0.3s;
-                opacity: 0;
-            }
-            
-            .e-commerce:hover {
-                background: rgba(9, 9, 121, 0.8);
-                background: linear-gradient(239deg, rgba(9, 9, 121, 0.8) 0%, rgba(0, 194, 255, 0.8) 100%);
-                color: white;
-            }
-            
-            .e-commerce:hover p {
-                color: white;
-                transition: 0.3s;
-            }
-            
-            .e-commerce:hover i {
-                color: white;
-                transition: 0.3s;
-            }
-            
-            .e-commerce:hover span {
-                opacity: 1;
-                transition: 0.3s;
-            }
-            /* Terceira Div */
-            
-            #portfolio {
-                padding: 100px 400px;
-            }
-            
-            #portfolios {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-            }
-            
-            h3 {
-                font-size: 46px;
-                background: rgb(9, 9, 121);
-                background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            
-            .portfolio1 {
-                background-color: rgba(247, 243, 243, 0.856);
-                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
-                padding: 60px 30px;
-                width: 25rem;
-                height: 23rem;
-                margin-top: 80px;
-                border-radius: 5%;
-                cursor: pointer;
-            }
-            
-            .portfolio1 img {
-                position: relative;
-                right: 30px;
-                bottom: 60px;
-                width: 25rem;
-                border-radius: 5% 5% 0% 0%;
-            }
-            
-            .portfolio1 p {
-                margin-top: -50px;
-                font-size: 24px;
-                font-weight: bold;
-                padding: 5px;
-            }
-            
-            .portfolio1 span {
-                font-size: 14px;
-            }
-            
-            .portfolio1 i {
-                padding: 15px 10px;
-            }
-            
-            .portfolio2 {
-                background-color: rgba(247, 243, 243, 0.856);
-                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
-                padding: 60px 30px;
-                width: 25rem;
-                height: 23rem;
-                margin-top: 80px;
-                border-radius: 5%;
-                cursor: pointer;
-            }
-            
-            .portfolio2 img {
-                position: relative;
-                right: 30px;
-                bottom: 60px;
-                width: 25rem;
-                border-radius: 5% 5% 0% 0%;
-            }
-            
-            .portfolio2 p {
-                margin-top: -50px;
-                font-size: 24px;
-                font-weight: bold;
-                padding: 5px;
-            }
-            
-            .portfolio2 span {
-                font-size: 14px;
-            }
-            
-            .portfolio2 i {
-                padding: 15px 10px;
-            }
-            /*Quarta Div */
-            
-            .flex-5 {
-                padding: 100px 400px;
-                background-color: white;
-            }
-            
-            h4 {
-                grid-area: 1/1;
-                font-size: 46px;
-                text-align: center;
-                background: rgb(9, 9, 121);
-                background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                white-space: nowrap;
-                margin-bottom: 40px;
-            }
-            
-            .clientes img {
-                width: 20rem;
-                filter: grayscale(100);
-                padding: 40px;
-            }
-            
-            .clientes img:hover {
-                filter: grayscale(0);
-            }
-            
-            #logo-elevic {
-                width: 12rem;
-            }
-            /* Quinta Div */
-            
-            #contato {
-                background: white;
-                padding: 100px 200px;
-                margin: auto;
-            }
-            
-            .forma-contato {
-                font-weight: bold;
-                font-size: 24px;
-            }
-            
-            h6 {
-                grid-area: 1/1;
-                font-size: 46px;
-                text-align: center;
-                background: rgb(9, 9, 121);
-                background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                white-space: nowrap;
-                padding-bottom: 6rem;
-            }
-            
-            #fale-conosco {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                margin: auto;
-                white-space: nowrap;
-                grid-gap: 50px;
-            }
-            
-            .button-wpp {
-                padding: 12px 30px;
-                border: none;
-                border-radius: 8px;
-                font-size: 16px;
-                font-weight: bold;
-                color: var(--title-white);
-                background: linear-gradient(118.1deg, #25d366 -2.02%, #11ad4a 129.72%);
-                cursor: pointer;
-                transition: all 0.5s;
-                position: relative;
-                top: 20px;
-                color: white;
-                margin: 10px;
-            }
-            
-            .button-email {
-                padding: 12px 50px;
-                border: none;
-                border-radius: 8px;
-                font-size: 16px;
-                font-weight: bold;
-                color: var(--title-white);
-                background: rgba(247, 243, 243, 0.856);
-                cursor: pointer;
-                transition: all 0.5s;
-                position: relative;
-                top: 20px;
-                color: red;
-                margin: 10px;
-            }
-            
-            #formulario {
-                display: none;
-                padding: 20px;
-                white-space: initial;
-                background-color: rgba(247, 243, 243, 0.856);
-                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
-                border-radius: 5%;
-                margin-top: 50px;
-            }
-            
-            #formulario button {
-                padding: 12px 70px;
-                border: none;
-                border-radius: 8px;
-                font-size: 16px;
-                font-weight: bold;
-                color: var(--title-white);
-                background: linear-gradient(135deg, rgba(9, 9, 121, 0.7) 0%, rgba(0, 194, 255, 0.7) 100%);
-                cursor: pointer;
-                transition: all 0.5s;
-                color: white;
-                margin: 15px;
-            }
-            
-            #formulario input {
-                width: 200px;
-                height: 30px;
-                margin: 8px;
-            }
-            
-            #formulario textarea {
-                margin-top: 20px;
-                position: relative;
-                width: 280px;
-                font-family: 'Poppins', sans-serif;
-            }
-            
-            .phone {
-                position: relative;
-                right: 10px;
-            }
-            
-            .e-mail {
-                position: relative;
-                left: 2px;
-            }
-            
-            form {
-                white-space: initial;
-            }
-            
-            .infos {
-                text-align: left;
-                line-height: 3rem;
-                font-size: 16px;
-            }
-            
-            .follow span {
-                font-weight: bold;
-                font-size: 24px;
-                position: relative;
-            }
-            
-            .social i {
-                font-size: 1.4rem;
-                width: 8%;
-                cursor: pointer;
-            }
-            
-            .social a {
-                text-decoration: none;
-                color: black;
-            }
-            
-            .social a:hover {
-                color: blue;
-            }
-            
-            .fim-site {
-                display: flex;
-                justify-content: center;
-            }
-            
-            .fim-site p {
-                margin: 0px 20px 0px 20px;
-            }
-            
-            @media screen and (max-width: 600px) {
-                .topnav a:not(:first-child) {
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
+                * {
+                    margin: 0;
+                    padding: 0;
+                    outline: 0;
+                    box-sizing: border-box;
+                }
+                
+                #container {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }
+                
+                body {
+                    font-family: 'Poppins', sans-serif;
+                }
+                
+                .no-decoration {
+                    text-decoration: none;
+                }
+                /* header */
+                
+                .flex-1 {
+                    flex: 1;
+                    padding: 20px 350px;
+                }
+                
+                .logo {
+                    padding-left: 50px;
+                    float: left;
+                    width: 12rem;
+                    position: relative;
+                    top: 10px;
+                }
+                
+                .topnav {
+                    padding: 20px 30px;
+                    float: right;
+                    overflow: hidden;
+                }
+                
+                .topnav a {
+                    display: inline-block;
+                    color: #111A47;
+                    text-align: center;
+                    padding: 6px 8px;
+                    text-decoration: none;
+                    font-size: 17px;
+                }
+                
+                .topnav a:hover {
+                    color: #6D6D6D;
+                }
+                
+                .topnav .icon {
                     display: none;
                 }
-                .topnav a.icon {
-                    float: right;
-                    display: block;
-                }
-                #topnav.responsive {
+                
+                .botao-nav {
+                    padding: 12px 30px;
+                    border: none;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    background: linear-gradient(118.1deg, #E4C332 -2.02%, #f8f400 129.72%);
+                    cursor: pointer;
+                    transition: all 0.5s;
                     position: relative;
+                    overflow: hidden;
                 }
-                .topnav.responsive .icon {
-                    position: absolute;
-                    right: 0;
-                    top: 0;
+                
+                .botao-nav:hover:before {
+                    transform: translate(-25%, -25%) rotate(-180deg);
                 }
-                .topnav.responsive a {
-                    float: none;
-                    display: block;
-                    text-align: left;
+                
+                .botao-nav:hover {
+                    background: linear-gradient(118.1deg, #f8f400 -2.02%, #E4C332 129.72%);
                 }
-            }
-            
-            @media screen and (min-width: 2000px) {
+                /* Primeira Div */
+                
+                .flex-2 {
+                    padding: 100px 400px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr;
+                    flex: 2;
+                    align-items: center;
+                    text-align: center;
+                }
+                
+                .item1-content1 {
+                    grid-area: 1/1;
+                    padding-right: 40px;
+                }
+                
+                .item2-content1 {
+                    grid-area: 1/2;
+                }
+                
                 .imagem1 {
-                    width: 75vh;
-                    position: relative;
-                    left: 70px;
+                    width: 55vh;
                 }
+                
+                h1 {
+                    font-size: 48px;
+                    background: rgb(9, 9, 121);
+                    background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-align: left;
+                    line-height: 4rem;
+                }
+                
+                .p1 {
+                    font-size: 18px;
+                    color: black;
+                    text-align: left;
+                    font-weight: 400;
+                    padding-top: 10px;
+                }
+                
+                .saiba-mais {
+                    padding-top: 20px;
+                    text-decoration: none;
+                    float: left;
+                    font-weight: 700;
+                    background: rgb(9, 9, 121);
+                    background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                
+                .saiba-mais:hover {
+                    background: rgb(9, 9, 121);
+                    background: linear-gradient(239deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                /* Segunda Div */
+                
+                #servicos {
+                    padding: 140px 400px;
+                    background-color: white;
+                }
+                
+                .item2-content2 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    font-size: 38px;
+                    transition: 0.5s;
+                }
+                
+                .item2-content2 i {
+                    color: rgb(9, 9, 121, 1);
+                }
+                
+                h2 {
+                    padding: 40px;
+                    grid-area: 1/1;
+                    font-size: 46px;
+                    white-space: nowrap;
+                    text-align: center;
+                    background: rgb(9, 9, 121);
+                    background: linear-gradient(239deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    position: relative;
+                }
+                
+                .comunicacao {
+                    background-color: white;
+                    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+                    padding: 60px 30px;
+                    width: 20rem;
+                    height: 18rem;
+                    margin-top: 80px;
+                    border-radius: 5%;
+                    cursor: pointer;
+                }
+                
+                .comunicacao p {
+                    font-size: 18px;
+                    margin-top: 20px;
+                    font-weight: bold;
+                    color: rgb(9, 9, 121, 1);
+                }
+                
+                .comunicacao span {
+                    font-size: 16px;
+                    transition: 0.3s;
+                    opacity: 0;
+                }
+                
+                .comunicacao:hover {
+                    background: rgba(9, 9, 121, 0.8);
+                    background: linear-gradient(239deg, rgba(9, 9, 121, 0.8) 0%, rgba(0, 194, 255, 0.8) 100%);
+                    color: white;
+                }
+                
+                .comunicacao:hover p {
+                    color: white;
+                    transition: 0.3s;
+                }
+                
+                .comunicacao:hover i {
+                    color: white;
+                    transition: 0.3s;
+                }
+                
+                .comunicacao:hover span {
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+                
+                .mkt-digital {
+                    background-color: white;
+                    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+                    padding: 60px 0px 30px 0px;
+                    width: 20rem;
+                    height: 18rem;
+                    margin-top: 80px;
+                    border-radius: 5%;
+                    cursor: pointer;
+                }
+                
+                .mkt-digital p {
+                    font-size: 18px;
+                    margin-top: 20px;
+                    font-weight: bold;
+                    color: rgb(9, 9, 121, 1);
+                }
+                
+                .mkt-digital span {
+                    font-size: 16px;
+                    transition: 0.3s;
+                    opacity: 0;
+                }
+                
+                .mkt-digital:hover {
+                    background: rgba(9, 9, 121, 0.8);
+                    background: linear-gradient(239deg, rgba(9, 9, 121, 0.8) 0%, rgba(0, 194, 255, 0.8) 100%);
+                    color: white;
+                }
+                
+                .mkt-digital:hover p {
+                    color: white;
+                    transition: 0.3s;
+                }
+                
+                .mkt-digital:hover i {
+                    color: white;
+                    transition: 0.3s;
+                }
+                
+                .mkt-digital:hover span {
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+                
+                .web {
+                    background-color: white;
+                    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+                    padding: 60px 30px;
+                    width: 20rem;
+                    height: 18rem;
+                    margin-top: 80px;
+                    border-radius: 5%;
+                    cursor: pointer;
+                }
+                
+                .web p {
+                    font-size: 18px;
+                    margin-top: 20px;
+                    font-weight: bold;
+                    color: rgb(9, 9, 121, 1);
+                }
+                
+                .web span {
+                    font-size: 16px;
+                    transition: 0.3s;
+                    opacity: 0;
+                }
+                
+                .web:hover {
+                    background: rgba(9, 9, 121, 0.8);
+                    background: linear-gradient(239deg, rgba(9, 9, 121, 0.8) 0%, rgba(0, 194, 255, 0.8) 100%);
+                    color: white;
+                }
+                
+                .web:hover p {
+                    color: white;
+                    transition: 0.3s;
+                }
+                
+                .web:hover i {
+                    color: white;
+                    transition: 0.3s;
+                }
+                
+                .web:hover span {
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+                
+                .e-commerce {
+                    background-color: white;
+                    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+                    padding: 60px 30px;
+                    width: 20rem;
+                    height: 18rem;
+                    margin-top: 80px;
+                    border-radius: 5%;
+                    cursor: pointer;
+                }
+                
+                .e-commerce p {
+                    font-size: 18px;
+                    margin-top: 20px;
+                    font-weight: bold;
+                    color: rgb(9, 9, 121, 1);
+                }
+                
+                .e-commerce span {
+                    font-size: 16px;
+                    transition: 0.3s;
+                    opacity: 0;
+                }
+                
+                .e-commerce:hover {
+                    background: rgba(9, 9, 121, 0.8);
+                    background: linear-gradient(239deg, rgba(9, 9, 121, 0.8) 0%, rgba(0, 194, 255, 0.8) 100%);
+                    color: white;
+                }
+                
+                .e-commerce:hover p {
+                    color: white;
+                    transition: 0.3s;
+                }
+                
+                .e-commerce:hover i {
+                    color: white;
+                    transition: 0.3s;
+                }
+                
+                .e-commerce:hover span {
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+                /* Terceira Div */
+                
+                #portfolio {
+                    padding: 100px 400px;
+                }
+                
                 #portfolios {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-around;
                 }
-                #formulario {
-                    width: 35rem;
+                
+                h3 {
+                    font-size: 46px;
+                    background: rgb(9, 9, 121);
+                    background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
-            }
+                
+                .portfolio1 {
+                    background-color: rgba(247, 243, 243, 0.856);
+                    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+                    padding: 60px 30px;
+                    width: 25rem;
+                    height: 23rem;
+                    margin-top: 80px;
+                    border-radius: 5%;
+                    cursor: pointer;
+                }
+                
+                .portfolio1 img {
+                    position: relative;
+                    right: 30px;
+                    bottom: 60px;
+                    width: 25rem;
+                    border-radius: 5% 5% 0% 0%;
+                }
+                
+                .portfolio1 p {
+                    margin-top: -50px;
+                    font-size: 24px;
+                    font-weight: bold;
+                    padding: 5px;
+                }
+                
+                .portfolio1 span {
+                    font-size: 14px;
+                }
+                
+                .portfolio1 i {
+                    padding: 15px 10px;
+                }
+                
+                .portfolio2 {
+                    background-color: rgba(247, 243, 243, 0.856);
+                    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+                    padding: 60px 30px;
+                    width: 25rem;
+                    height: 23rem;
+                    margin-top: 80px;
+                    border-radius: 5%;
+                    cursor: pointer;
+                }
+                
+                .portfolio2 img {
+                    position: relative;
+                    right: 30px;
+                    bottom: 60px;
+                    width: 25rem;
+                    border-radius: 5% 5% 0% 0%;
+                }
+                
+                .portfolio2 p {
+                    margin-top: -50px;
+                    font-size: 24px;
+                    font-weight: bold;
+                    padding: 5px;
+                }
+                
+                .portfolio2 span {
+                    font-size: 14px;
+                }
+                
+                .portfolio2 i {
+                    padding: 15px 10px;
+                }
+                /*Quarta Div */
+                
+                .flex-5 {
+                    padding: 100px 400px;
+                    background-color: white;
+                }
+                
+                h4 {
+                    grid-area: 1/1;
+                    font-size: 46px;
+                    text-align: center;
+                    background: rgb(9, 9, 121);
+                    background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    white-space: nowrap;
+                    margin-bottom: 40px;
+                }
+                
+                .clientes img {
+                    width: 20rem;
+                    filter: grayscale(100);
+                    padding: 40px;
+                }
+                
+                .clientes img:hover {
+                    filter: grayscale(0);
+                }
+                
+                #logo-elevic {
+                    width: 12rem;
+                }
+                /* Quinta Div */
+                
+                #contato {
+                    background: white;
+                    padding: 100px 200px;
+                    margin: auto;
+                }
+                
+                .forma-contato {
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+                
+                h6 {
+                    grid-area: 1/1;
+                    font-size: 46px;
+                    text-align: center;
+                    background: rgb(9, 9, 121);
+                    background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    white-space: nowrap;
+                    padding-bottom: 6rem;
+                }
+                
+                #fale-conosco {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    margin: auto;
+                    white-space: nowrap;
+                    grid-gap: 50px;
+                }
+                
+                .button-wpp {
+                    padding: 12px 30px;
+                    border: none;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: var(--title-white);
+                    background: linear-gradient(118.1deg, #25d366 -2.02%, #11ad4a 129.72%);
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    position: relative;
+                    top: 20px;
+                    color: white;
+                    margin: 10px;
+                }
+                
+                .button-email {
+                    padding: 12px 50px;
+                    border: none;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: var(--title-white);
+                    background: rgba(247, 243, 243, 0.856);
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    position: relative;
+                    top: 20px;
+                    color: red;
+                    margin: 10px;
+                }
+                
+                #formulario {
+                    display: none;
+                    padding: 20px;
+                    white-space: initial;
+                    background-color: rgba(247, 243, 243, 0.856);
+                    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+                    border-radius: 5%;
+                    margin-top: 50px;
+                }
+                
+                #formulario button {
+                    padding: 12px 70px;
+                    border: none;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: var(--title-white);
+                    background: linear-gradient(135deg, rgba(9, 9, 121, 0.7) 0%, rgba(0, 194, 255, 0.7) 100%);
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    color: white;
+                    margin: 15px;
+                }
+                
+                #formulario input {
+                    width: 200px;
+                    height: 30px;
+                    margin: 8px;
+                }
+                
+                #formulario textarea {
+                    margin-top: 20px;
+                    position: relative;
+                    width: 280px;
+                    font-family: 'Poppins', sans-serif;
+                }
+                
+                .phone {
+                    position: relative;
+                    right: 10px;
+                }
+                
+                .e-mail {
+                    position: relative;
+                    left: 2px;
+                }
+                
+                form {
+                    white-space: initial;
+                }
+                
+                .infos {
+                    text-align: left;
+                    line-height: 3rem;
+                    font-size: 16px;
+                }
+                
+                .follow span {
+                    font-weight: bold;
+                    font-size: 24px;
+                    position: relative;
+                }
+                
+                .social i {
+                    font-size: 1.4rem;
+                    width: 8%;
+                    cursor: pointer;
+                }
+                
+                .social a {
+                    text-decoration: none;
+                    color: black;
+                }
+                
+                .social a:hover {
+                    color: blue;
+                }
+                
+                .fim-site {
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                .fim-site p {
+                    margin: 0px 20px 0px 20px;
+                }
+                
+                @media screen and (max-width: 600px) {
+                    .inicio i {
+                        font-size: 1.75rem;
+                    }
+                    .topnav a {
+                        display: none;
+                    }
+                    .topnav a.icon {
+                        float: right;
+                        display: block;
+                    }
+                    #topnav.responsive {
+                        position: relative;
+                    }
+                    .topnav.responsive .icon {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                    .topnav.responsive a {
+                        float: none;
+                        display: block;
+                        text-align: left;
+                    }
+                    .flex-1 {
+                        padding: 20px;
+                    }
+                    .flex-2 {
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    h1 {
+                        font-size: 2rem;
+                        line-height: 3rem;
+                    }
+                    .p1 {
+                        font-size: 1rem;
+                    }
+                    .imagem1 {
+                        width: 45vh;
+                    }
+                    #servicos {
+                        padding: 20px;
+                    }
+                    h2 {
+                        font-size: 2rem;
+                        white-space: initial;
+                    }
+                    .item2-content2 {
+                        justify-content: center;
+                    }
+                    .comunicacao span {
+                        opacity: 1;
+                    }
+                    .mkt-digital span {
+                        opacity: 1;
+                    }
+                    .web span {
+                        opacity: 1;
+                    }
+                    .e-commerce span {
+                        opacity: 1;
+                    }
+                    #portfolio {
+                        padding: 20px;
+                    }
+                    h3 {
+                        font-size: 2rem;
+                    }
+                    .flex-5 {
+                        padding: 20px;
+                    }
+                    h4 {
+                        font-size: 2rem;
+                    }
+                    #contato {
+                        padding: 20px;
+                    }
+                    #fale-conosco {
+                        display: flex;
+                        flex-direction: column;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        margin: auto;
+                    }
+                    .maps {
+                        width: 25rem;
+                    }
+                }
+                
+                @media screen and (min-width: 2000px) {
+                    .imagem1 {
+                        width: 75vh;
+                        position: relative;
+                        left: 70px;
+                    }
+                    #portfolios {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                    }
+                    #formulario {
+                        width: 35rem;
+                    }
+                }
