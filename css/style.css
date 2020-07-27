@@ -615,6 +615,11 @@ form {
 
 .social a {
     text-decoration: none;
+    color: black;
+}
+
+.social a:hover {
+    color: blue;
 }
 
 .fim-site {
