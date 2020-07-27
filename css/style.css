@@ -945,6 +945,9 @@ form {
         display: flex;
         flex-direction: column;
     }
+    #fale-conosco div {
+        margin-bottom: 20px;
+    }
     .forma-contato {
         font-size: 0.875rem;
         white-space: initial;
@@ -958,5 +961,11 @@ form {
     }
     .fim-site {
         font-size: 12px;
+    }
+    #formulario {
+        font-size: 0.75rem;
+    }
+    .phone {
+        right: 8px;
     }
 }
