@@ -613,10 +613,6 @@ form {
     cursor: pointer;
 }
 
-.social i:hover {
-    color: blue;
-}
-
 .social a {
     text-decoration: none;
 }
