@@ -720,12 +720,17 @@ form {
         display: none;
     }
     #botao-menu {
+        position: relative;
+        top: 15px;
+        right: 100px;
         font-size: 1.75rem;
         display: block;
+        float: right;
     }
     .topnav {
         position: relative;
-        margin-bottom: -500px;
+        margin-top: 25px;
+        margin-bottom: -420px;
         z-index: 1;
     }
     .topnav a {
@@ -765,29 +770,25 @@ form {
 }
 
 @media screen and (max-width: 600px) {
-    #botao-menu {
-        font-size: 1.75rem;
-    }
-    .topnav a {
+    #myTopNav {
         display: none;
     }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-    #topnav.responsive {
+    #botao-menu {
         position: relative;
-    }
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
+        top: 15px;
+        left: -40px;
+        right: 100px;
+        font-size: 1.75rem;
         display: block;
-        text-align: left;
+        float: right;
     }
+    .topnav {
+        position: relative;
+        top: 35px;
+        margin-top: 0px;
+        margin-bottom: -420px;
+        z-index: 1;
+    }   
     .topo {
         padding: 20px;
     }
@@ -890,7 +891,21 @@ form {
     }
     #botao-menu {
         padding: 0px;
+        left: -10px;
     }
+    #myTopNav {
+        display: none;
+    }
+
+    .topnav {
+        position: relative;
+        margin-top: -10px;
+        top: 0;
+        left: 30px;
+        margin-bottom: -420px;
+        z-index: 1;
+    } 
+  
     h1 {
         font-size: 1.5rem;
         line-height: 2rem;
