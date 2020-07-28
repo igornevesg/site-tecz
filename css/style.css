@@ -103,7 +103,7 @@ body {
 }
 
 .imagem1 {
-    width: 32.21rem;
+    width: 30vw;
 }
 
 h1 {
@@ -166,7 +166,7 @@ h2 {
     padding: 2.5rem;
     grid-area: 1/1;
     font-size: 3rem;
-    white-space: nowrap;
+    white-space: initial;
     text-align: center;
     background: rgb(9, 9, 121);
     background: linear-gradient(239deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
@@ -449,7 +449,7 @@ h3 {
 
 /*Quarta Div */
 
-.flex-5 {
+#parceiros {
     padding: 100px 400px;
     background-color: white;
 }
@@ -462,7 +462,7 @@ h4 {
     background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    white-space: nowrap;
+    white-space: initial;
     margin-bottom: 40px;
 }
 
@@ -502,7 +502,7 @@ h6 {
     background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    white-space: nowrap;
+    white-space: initial;
     padding-bottom: 6rem;
 }
 
@@ -510,7 +510,7 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
-    white-space: nowrap;
+    white-space: initial;
     grid-gap: 50px;
 }
 
@@ -685,7 +685,7 @@ form {
     h3 {
         font-size: 3rem;
     }
-    .flex-5 {
+    #parceiros {
         padding: 6.25rem 5rem;
     }
     h4 {
@@ -720,7 +720,7 @@ form {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin: auto;
-        white-space: nowrap;
+        white-space: initial;
         grid-gap: 50px;
     }
     .maps {
@@ -731,12 +731,14 @@ form {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     .inicio i {
         font-size: 1.75rem;
     }
     .topnav a {
-        display: none;
+        display: block;
+        background-color: lavender;
+        padding: 20px;
     }
     .topnav a.icon {
         float: right;
@@ -770,6 +772,7 @@ form {
     }
     .item2-content2 {
         justify-content: center;
+        margin: 200px;
     }
     #fale-conosco {
         display: flex;
@@ -831,6 +834,7 @@ form {
     }
     .item2-content2 {
         justify-content: center;
+        margin: 20px;
     }
     .comunicacao span {
         opacity: 1;
@@ -852,7 +856,7 @@ form {
         top: 25px;
         font-size: 2rem;
     }
-    .flex-5 {
+    #parceiros {
         padding: 20px;
     }
     h4 {
@@ -879,6 +883,15 @@ form {
     }
     h6 {
         font-size: 2rem;
+    }
+    .infos {
+        margin-bottom: 20px;
+    }
+    .follow {
+        margin-top: 20px;
+    }
+    .button-email {
+        margin-bottom: 20px;
     }
 }
 
