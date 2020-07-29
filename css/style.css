@@ -59,7 +59,9 @@ body {
     display: none;
     cursor: pointer;
 }
-
+#myTopNav {
+    display: block;
+}
 /* Primeira Div */
 
 .flex-2 {
@@ -627,9 +629,15 @@ form {
     #formulario {
         width: 35rem;
     }
+    #myTopNav {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 1440px) {
+    #myTopNav {
+        display: block;
+    }
     .topo {
         padding: 20px;
     }
@@ -708,6 +716,9 @@ form {
     }
     .forma-contato {
         white-space: initial;
+    }
+    #myTopNav {
+        display: block;
     }
 }
 
@@ -907,7 +918,7 @@ form {
 
     .topnav {
         position: relative;
-        margin-top: -10px;
+        margin-top: 0px;
         top: 0;
         left: 30px;
         margin-bottom: -420px;
