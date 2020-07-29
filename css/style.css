@@ -939,24 +939,32 @@ form {
         height: 15rem;
         padding: 30px 0px;
     }
+    .comunicacao span {
+        font-size: 14px;
+    }
     .mkt-digital {
         width: 17rem;
         height: 15rem;
         padding: 30px 0px;
     }
     .mkt-digital span {
-        line-height: 0;
-        padding: 0;
+        font-size: 14px;
     }
     .web {
         width: 17rem;
         height: 15rem;
         padding: 30px 0px;
     }
+    .web span {
+        font-size: 14px;
+    }
     .e-commerce {
         width: 17rem;
         height: 15rem;
         padding: 30px 0px;
+    }
+    .e-commerce span {
+        font-size: 14px;
     }
     h3 {
         font-size: 1.5rem;
