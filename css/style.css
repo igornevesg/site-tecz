@@ -57,6 +57,7 @@ body {
 
 #botao-menu {
     display: none;
+    cursor: pointer;
 }
 
 /* Primeira Div */
