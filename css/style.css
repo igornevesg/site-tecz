@@ -88,7 +88,7 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     background: rgb(9, 9, 121);
     background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
     -webkit-background-clip: text;
@@ -135,7 +135,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 80px;
+    gap: 0px 80px;
     font-size: 2.375rem;
     transition: 0.5s;
 }
@@ -347,7 +347,8 @@ h2 {
 #portfolios {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 0px 80px;
 }
 
 h3 {
@@ -732,33 +733,7 @@ form {
     .item2-content2 {
         gap: 50px;
         }
-    #myTopNav {
-        display: none;
-    }
-    #botao-menu {
-        position: relative;
-        top: 15px;
-        right: 100px;
-        font-size: 1.75rem;
-        display: block;
-        float: right;
-    }
-    .topnav {
-        position: relative;
-        margin-top: 35px;
-        margin-bottom: -420px;
-        z-index: 1;
-    }
-    .topnav a {
-        padding: 15px;
-        display: block;
-        background-color: rgb(241, 235, 235);
-        margin: 0;
-        width: 15rem;
-    }
-    .topnav a:hover {
-        background-color: rgb(214, 215, 228);  
-    }
+    
 
     .flex-2 {
     position: relative;
@@ -785,7 +760,7 @@ form {
     }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     #myTopNav {
         display: none;
     }
@@ -806,6 +781,17 @@ form {
         margin-bottom: -420px;
         z-index: 1;
     }   
+    .topnav a {
+        padding: 15px;
+        display: block;
+        background-color: rgb(241, 235, 235);
+        margin: 0;
+        width: 15rem;
+    }
+    .topnav a:hover {
+        background-color: rgb(214, 215, 228);  
+    }
+
     .topo {
         padding: 20px;
     }
@@ -832,9 +818,10 @@ form {
     h2 {
         font-size: 2rem;
         white-space: initial;
+        margin-top: 40px;
     }
     .item2-content2 {
-        gap: 0;
+        gap: 0px 60px;
         justify-content: center;
         margin: 20px;
     }
@@ -897,7 +884,7 @@ form {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
     .item1-content1 {
         margin: auto;
         padding: 0%;
@@ -943,7 +930,9 @@ form {
     h2 {
         font-size: 1.5rem;
         line-height: 2rem;
-        top: 24px;
+        margin-top: 20px;
+        margin-bottom: -80px;
+        
     }
     .comunicacao {
         width: 17rem;
