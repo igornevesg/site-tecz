@@ -59,9 +59,12 @@ body {
     display: none;
     cursor: pointer;
 }
+
 #myTopNav {
     display: block;
 }
+
+
 /* Primeira Div */
 
 .flex-2 {
@@ -625,7 +628,7 @@ form {
     #portfolios {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
     #formulario {
         width: 35rem;
@@ -723,26 +726,22 @@ form {
     }
 }
 
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
     .topo {
         position: relative;
         top: 0;
         left: 0;
-    }   
-
+    }
     .item2-content2 {
         gap: 50px;
-        }
-    
-
+    }
     .flex-2 {
-    position: relative;
+        position: relative;
     }
     h1 {
         font-size: 2.5rem;
         line-height: 3.5rem;
     }
-
     .p1 {
         font-size: 1rem;
     }
@@ -751,7 +750,7 @@ form {
     }
     #servicos {
         padding: 20px;
-    }  
+    }
     #fale-conosco {
         display: flex;
         flex-direction: column;
@@ -776,11 +775,11 @@ form {
     .topnav {
         position: relative;
         top: 35px;
-        left:20px;
+        left: 20px;
         margin-top: 5px;
         margin-bottom: -420px;
         z-index: 1;
-    }   
+    }
     .topnav a {
         padding: 15px;
         display: block;
@@ -789,9 +788,8 @@ form {
         width: 15rem;
     }
     .topnav a:hover {
-        background-color: rgb(214, 215, 228);  
+        background-color: rgb(214, 215, 228);
     }
-
     .topo {
         padding: 20px;
     }
@@ -799,7 +797,8 @@ form {
         padding: 20px;
         display: flex;
         flex-direction: column;
-        margin-top: 30px;;
+        margin-top: 30px;
+        ;
     }
     h1 {
         font-size: 2rem;
@@ -902,7 +901,6 @@ form {
     #myTopNav {
         display: none;
     }
-
     .topnav {
         position: relative;
         margin-top: 0px;
@@ -910,8 +908,7 @@ form {
         left: 30px;
         margin-bottom: -420px;
         z-index: 1;
-    } 
-  
+    }
     h1 {
         font-size: 1.5rem;
         line-height: 2rem;
@@ -932,7 +929,6 @@ form {
         line-height: 2rem;
         margin-top: 20px;
         margin-bottom: -80px;
-        
     }
     .comunicacao {
         width: 17rem;
