@@ -4,6 +4,10 @@ function clickEmail() {
 }
 
 function abrirMenu() {
-    document.getElementById("myTopNav").style.display = "block";
+    var submenu = document.getElementById("myTopNav");
+    if (submenu.style.display == 'none') {
+        submenu.style.display = 'block';
+    } else {
+        submenu.style.display = 'none';
+    }
 }
-

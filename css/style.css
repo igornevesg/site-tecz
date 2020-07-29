@@ -131,7 +131,8 @@ h1 {
 .item2-content2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 80px;
     font-size: 2.375rem;
     transition: 0.5s;
 }
@@ -716,6 +717,9 @@ form {
         left: 0;
     }   
 
+    .item2-content2 {
+        gap: 50px;
+        }
     #myTopNav {
         display: none;
     }
@@ -729,7 +733,7 @@ form {
     }
     .topnav {
         position: relative;
-        margin-top: 25px;
+        margin-top: 35px;
         margin-bottom: -420px;
         z-index: 1;
     }
@@ -744,9 +748,9 @@ form {
         background-color: rgb(214, 215, 228);  
     }
 
-.flex-2 {
+    .flex-2 {
     position: relative;
-}
+    }
     h1 {
         font-size: 2.5rem;
         line-height: 3.5rem;
@@ -756,7 +760,7 @@ form {
         font-size: 1rem;
     }
     .imagem1 {
-        width: 50vh;
+        width: 468.5px;
     }
     #servicos {
         padding: 20px;
@@ -769,7 +773,7 @@ form {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 740px) {
     #myTopNav {
         display: none;
     }
@@ -785,7 +789,8 @@ form {
     .topnav {
         position: relative;
         top: 35px;
-        margin-top: 0px;
+        left:20px;
+        margin-top: 5px;
         margin-bottom: -420px;
         z-index: 1;
     }   
@@ -796,6 +801,7 @@ form {
         padding: 20px;
         display: flex;
         flex-direction: column;
+        margin-top: 30px;;
     }
     h1 {
         font-size: 2rem;
@@ -816,6 +822,7 @@ form {
         white-space: initial;
     }
     .item2-content2 {
+        gap: 0;
         justify-content: center;
         margin: 20px;
     }
