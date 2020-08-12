@@ -148,6 +148,7 @@ h1 {
 }
 
 h2 {
+    padding-top: 1.25rem;
     grid-area: 1/1;
     font-size: 3rem;
     white-space: initial;
@@ -922,8 +923,8 @@ form {
     h2 {
         font-size: 1.5rem;
         line-height: 2rem;
-        margin-top: 20px;
-        margin-bottom: -80px;
+        margin-top: 40px;
+        margin-bottom: -30px;
     }
     .comunicacao {
         width: 17rem;
