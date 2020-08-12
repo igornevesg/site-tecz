@@ -144,11 +144,10 @@ h1 {
 }
 
 .item2-content2 i {
-    color: rgb(9, 9, 121, 1);
+    color: rgb(7, 49, 150);
 }
 
 h2 {
-    padding: 2.5rem;
     grid-area: 1/1;
     font-size: 3rem;
     white-space: initial;
@@ -168,14 +167,13 @@ h2 {
     height: 18rem;
     margin-top: 5rem;
     border-radius: 5%;
-    cursor: pointer;
 }
 
 .comunicacao p {
     font-size: 1.125rem;
     margin-top: 1.25rem;
     font-weight: bold;
-    color: rgb(9, 9, 121, 1);
+    color: rgb(7, 49, 150);
 }
 
 .comunicacao span {
@@ -213,14 +211,13 @@ h2 {
     height: 18rem;
     margin-top: 5rem;
     border-radius: 5%;
-    cursor: pointer;
 }
 
 .mkt-digital p {
     font-size: 1.125rem;
     margin-top: 1.25rem;
     font-weight: bold;
-    color: rgb(9, 9, 121, 1);
+    color: rgb(7, 49, 150);
 }
 
 .mkt-digital span {
@@ -258,14 +255,13 @@ h2 {
     height: 18rem;
     margin-top: 5rem;
     border-radius: 5%;
-    cursor: pointer;
 }
 
 .web p {
     font-size: 1.125rem;
     margin-top: 1.25rem;
     font-weight: bold;
-    color: rgb(9, 9, 121, 1);
+    color: rgb(7, 49, 150);
 }
 
 .web span {
@@ -303,14 +299,13 @@ h2 {
     height: 18rem;
     margin-top: 5rem;
     border-radius: 5%;
-    cursor: pointer;
 }
 
 .e-commerce p {
     font-size: 1.125rem;
     margin-top: 1.25rem;
     font-weight: bold;
-    color: rgb(9, 9, 121, 1);
+    color: rgb(7, 49, 150);
 }
 
 .e-commerce span {
