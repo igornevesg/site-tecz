@@ -632,6 +632,9 @@ form {
 }
 
 @media screen and (min-width: 2000px) {
+    .topnav a {
+        font-size: 1rem;
+    }
     .imagem1 {
         width: 75vh;
         position: relative;
