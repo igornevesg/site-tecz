@@ -18,6 +18,7 @@ body {
 
 .no-decoration {
     text-decoration: none;
+    color: black;
 }
 
 
@@ -347,7 +348,6 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0px 80px;
 }
 
 h3 {
@@ -369,6 +369,8 @@ h3 {
     margin-top: 5rem;
     border-radius: 5%;
     cursor: pointer;
+    transition: all 0.3s;
+    margin-right: 40px;
 }
 
 .portfolio1 img {
@@ -394,6 +396,11 @@ h3 {
     padding: 15px 10px;
 }
 
+.portfolio1:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
 .portfolio2 {
     background-color: rgba(247, 243, 243, 0.856);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
@@ -403,6 +410,8 @@ h3 {
     margin-top: 80px;
     border-radius: 5%;
     cursor: pointer;
+    transition: all 0.3s;
+    margin-left: 40px;
 }
 
 .portfolio2 img {
@@ -426,6 +435,11 @@ h3 {
 
 .portfolio2 i {
     padding: 15px 10px;
+}
+
+.portfolio2:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
 }
 
 
@@ -458,7 +472,9 @@ h4 {
     filter: grayscale(0);
 }
 
-#logo-elevic {
+#logo-vanmos {
+    position: relative;
+    top: 20px;
     width: 12rem;
 }
 
@@ -753,6 +769,20 @@ form {
         grid-template-columns: 1fr 1fr;
         margin: auto;
     }
+    #portfolios {
+        flex-direction: column;
+        margin: auto;
+    }
+    .portfolio1 {
+        margin-right: 0;
+        margin: auto;
+        margin-top: 80px;
+    }
+    .portfolio2 {
+        margin-left: 0;
+        margin: auto;
+        margin-top: 60px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -961,6 +991,9 @@ form {
     h3 {
         font-size: 1.5rem;
     }
+    #portfolios {
+        gap: 0;
+    }
     .portfolio1 {
         width: 18rem;
         height: 20rem;
@@ -999,8 +1032,9 @@ form {
     .clientes img {
         width: 15rem;
     }
-    #logo-elevic {
+    #logo-vanmos {
         width: 10rem;
+        top: 0;
     }
     h5 {
         font-size: 1.5rem;
