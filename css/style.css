@@ -641,7 +641,7 @@ form {
     .imagem1 {
         width: 75vh;
         position: relative;
-        left: 70px;
+        ;
     }
     #portfolios {
         display: flex;
@@ -928,7 +928,7 @@ form {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     .item1-content1 {
         margin: auto;
         padding: 0%;
