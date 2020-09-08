@@ -640,6 +640,8 @@ form {
     }
     .imagem1 {
         width: 75vh;
+        position: relative;
+        left: 180px;
     }
     .item2-content2 {
         justify-content: center;
