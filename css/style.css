@@ -26,19 +26,18 @@ body {
 
 .topo {
     flex: 1;
-    padding: 1.25rem 21.875rem;
+    padding: 1.5rem 5rem;
 }
 
 .logo {
-    padding-left: 3.125rem;
     float: left;
-    width: 12rem;
+    width: 10rem;
     position: relative;
-    top: 0.625rem;
+    top: 1rem;
 }
 
 .topnav {
-    padding: 1.25rem 1.875rem;
+    padding: 1.5rem 0rem;
     float: right;
     overflow: hidden;
 }
@@ -70,7 +69,7 @@ body {
 
 .flex-2 {
     flex: 2;
-    padding: 6.25rem 25rem;
+    padding: 6rem 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -88,7 +87,9 @@ body {
 }
 
 .imagem1 {
-    width: 30vw;
+    width: 35vw;
+    position: relative;
+    left: 80px;
 }
 
 h1 {
@@ -131,15 +132,14 @@ h1 {
 /* Segunda Div */
 
 #servicos {
-    padding: 8.75rem 25rem;
+    padding: 8.75rem 5rem;
     background-color: white;
 }
 
 .item2-content2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 0px 80px;
+    justify-content: space-between;
     font-size: 2.375rem;
     transition: 0.5s;
 }
@@ -167,6 +167,7 @@ h2 {
     padding: 3.75rem 1.875rem;
     width: 20rem;
     height: 18rem;
+    margin: 2rem;
     margin-top: 5rem;
     border-radius: 5%;
 }
@@ -211,6 +212,7 @@ h2 {
     padding: 3.75rem 0rem 1.875rem 0rem;
     width: 20rem;
     height: 18rem;
+    margin: 2rem;
     margin-top: 5rem;
     border-radius: 5%;
 }
@@ -255,6 +257,7 @@ h2 {
     padding: 3.75rem 1.875rem;
     width: 20rem;
     height: 18rem;
+    margin: 2rem;
     margin-top: 5rem;
     border-radius: 5%;
 }
@@ -299,6 +302,7 @@ h2 {
     padding: 3.75rem 1.875rem;
     width: 20rem;
     height: 18rem;
+    margin: 2rem;
     margin-top: 5rem;
     border-radius: 5%;
 }
@@ -346,7 +350,6 @@ h2 {
 
 #portfolios {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -483,7 +486,7 @@ h4 {
 
 #contato {
     background: white;
-    padding: 100px 200px;
+    padding: 6rem 5rem;
     margin: auto;
 }
 
@@ -657,9 +660,6 @@ form {
     #myTopNav {
         display: block;
     }
-    .topo {
-        padding: 20px;
-    }
     #inicio {
         font-size: 1.5rem;
     }
@@ -675,9 +675,6 @@ form {
     }
     .saiba-mais {
         font-size: 1rem;
-    }
-    .imagem1 {
-        width: 65vh;
     }
     #servicos {
         padding: 6.25rem 5rem;
@@ -719,7 +716,10 @@ form {
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1311px) {
+    .item2-content2 {
+        justify-content: center;
+    }
     #contato {
         padding: 6.25rem 4rem;
     }
@@ -729,6 +729,10 @@ form {
         margin: auto;
         white-space: initial;
         grid-gap: 50px;
+    }
+    .imagem1 {
+        left: 0;
+        width: 40vw;
     }
     .maps {
         width: 23rem;
@@ -754,14 +758,26 @@ form {
         position: relative;
     }
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 3.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    h5 {
+        font-size: 2rem;
+    }
+    h6 {
+        font-size: 2rem;
     }
     .p1 {
         font-size: 1rem;
-    }
-    .imagem1 {
-        width: 468.5px;
     }
     #servicos {
         padding: 20px;
@@ -788,7 +804,7 @@ form {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     #myTopNav {
         display: none;
     }
