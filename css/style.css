@@ -640,8 +640,9 @@ form {
     }
     .imagem1 {
         width: 75vh;
-        position: relative;
-        ;
+    }
+    .item2-content2 {
+        justify-content: center;
     }
     #portfolios {
         display: flex;
